@@ -2,6 +2,6 @@ language: php
 php:
   - 7.4
 install:
-  - composer install --no-interaction
+  - composer install --no-interaction -d src
 script:
   - ./src/vendor/bin/phpunit --configuration ./src/phpunit.xml
