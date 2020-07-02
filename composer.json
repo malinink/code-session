@@ -11,8 +11,8 @@
   ],
   "autoload": {
     "psr-4": {
-      "CodeSession\\": "CodeSession",
-      "CodeSession\\Test\\": "test\\CodeSession"
+      "CodeSession\\": "src/CodeSession",
+      "CodeSession\\Test\\": "tests\\CodeSession"
     }
   },
   "require": {

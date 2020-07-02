@@ -11,6 +11,10 @@ class CarTest extends TestCase
 {
     public function testCarCreatesSuccessfully()
     {
-        new Car(1,2,3);
+        $car = new Car(1,2,3);
+
+        $this->assertEquals(1, $car->getBrand());
+        $this->assertEquals(2, $car->getModel());
+        $this->assertEquals(3, $car->getGeo());
     }
 }

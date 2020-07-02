@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/7.1/phpunit.xsd"
-         backupGlobals="false"
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
          colors="true"
-         beStrictAboutTestsThatDoNotTestAnything="false"
->
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
     <php>
+        <env name="APP_ENV" value="test"/>
         <ini name="error_reporting" value="-1"/>
         <ini name="display_errors" value="On"/>
         <ini name="memory_limit" value="1024M"/>
@@ -15,7 +18,7 @@
 
     <testsuites>
         <testsuite name="Unit tests">
-            <directory suffix="Test.php">test</directory>
+            <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>

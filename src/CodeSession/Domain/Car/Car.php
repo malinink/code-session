@@ -16,7 +16,7 @@ class Car implements CarInterface
     {
         $this->brand = $brand;
         $this->model = $model;
-        $this->geo = $geo;
+        $this->geo   = $geo;
     }
 
     public function getBrand(): int
@@ -33,6 +33,4 @@ class Car implements CarInterface
     {
         return $this->geo;
     }
-
-
 }
