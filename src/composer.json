@@ -1,0 +1,24 @@
+{
+  "name": "code-session",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "km",
+      "email": "km@cm.expert"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "CodeSession\\": "CodeSession",
+      "CodeSession\\Test\\": "test\\CodeSession"
+    }
+  },
+  "require": {
+    "php": ">=7.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9"
+  }
+}
