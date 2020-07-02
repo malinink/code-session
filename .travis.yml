@@ -1,0 +1,7 @@
+language: php
+php:
+  - 7.4
+install:
+  - composer install --no-interaction
+script:
+  - ./src/vendor/bin/phpunit --configuration ./src/phpunit.xml
