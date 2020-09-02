@@ -13,5 +13,5 @@ interface MarketInterface
 {
     public function getCar(): CarInterface;
 
-    public function getAveragePrice(): MoneyInterface;
+    public function getMedianPrice(): MoneyInterface;
 }
