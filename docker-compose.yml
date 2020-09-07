@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+  php_test:
+    build:
+      context: ./
+      args:
+        - TZ=${TZ}
+        - UID=${DOCKER_UID}
+    restart: ${DOCKER_RESTART}
+    tty: true
+    volumes:
+      - "${PROJECT_ROOT}:/spool/www/code-session:delegated"
